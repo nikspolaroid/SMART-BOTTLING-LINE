@@ -1,9 +1,0 @@
-services:
-  openplc:
-    image: autonomylogic/openplc:latest
-    container_name: openplc_runtime
-    ports:
-      - "8080:8080"
-      - "502:502"
-      - "4840:4840"
-    restart: unless-stopped
