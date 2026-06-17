@@ -1,0 +1,4 @@
+paho-mqtt==1.6.1
+opcua==0.98.13
+pymodbus==3.6.3
+flask==3.0.0
