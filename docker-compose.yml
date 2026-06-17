@@ -1,18 +1,9 @@
-version: "3.8"
-
 services:
   openplc:
-    image: openplc/openplc_v3:latest
+    image: autonomylogic/openplc:latest
     container_name: openplc_runtime
     ports:
-      - "8080:8080"   # OpenPLC web dashboard
-      - "502:502"     # Modbus TCP
-      - "4840:4840"   # OPC UA
+      - "8080:8080"
+      - "502:502"
+      - "4840:4840"
     restart: unless-stopped
-    volumes:
-      - openplc_data:/workdir
-    environment:
-      - TZ=Europe/Berlin
-
-volumes:
-  openplc_data:
