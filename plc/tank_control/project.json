@@ -26,6 +26,17 @@
         "globalVariables": []
       }
     },
-    "libraries": []
+    "libraries": [],
+    "debugVariables": {
+      "pous": {
+        "main": [
+          "tank_level",
+          "inlet_valve",
+          "outlet_valve",
+          "alarm_overflow",
+          "alarm_low"
+        ]
+      }
+    }
   }
 }
